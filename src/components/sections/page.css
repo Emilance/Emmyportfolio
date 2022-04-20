@@ -139,20 +139,50 @@
     padding: 5px;
 }
 
-progress{
+.progressBar{
     width :20rem;
     height:1.3rem;
+    background-color: var(--color-header);
+
+}
+.html,.css, .javascript, .jquery, .react, .php{
+    height:1.3rem;
+    background-color: var(--color-primary);
+    animation:progress 7s  linear  infinite;
+    animation-delay: 2s;
+}
+@keyframes progress {
+    10% {
+        width:10%
+    }
+
+    50% {
+        width:50%
+    }
+    60% {
+        width:60%
+    }
+    70% {
+        width:70%
+    }
     
+
 }
 
-progress::-webkit-progress-bar {
-    background-color: var(--color-header);
+.html, .css{
+    width: 90%;
 }
-progress::-webkit-progress-value {
-    background-color: var(--color-primary);
+.javascript{
+    width: 79%;
 }
-progress[value]{
-   background-color:blue;
+.jquery{
+    width: 69%;
+}
+.react{
+    width: 70%;
+}
+.php{
+    width: 60%;
 }
 
 .aicon{
@@ -195,6 +225,13 @@ progress[value]{
     margin:1rem;
     display: flex;
     flex-direction: column;
+    transition: 0.5s all ease;
+    padding-bottom: 1rem;
+}
+
+.sServiceContainer:hover{
+    width:31%;
+    height: 90vh;
 }
 
 .serviceDisplayArea{
@@ -231,10 +268,11 @@ progress[value]{
     margin-bottom: 1rem;
 }
 .sbtn, .sbtn>a{
-    width: 60%;
+    width: 65%;
     font-size: 0.8rem;
+   
+    border-radius: 7px;
     text-decoration: none;
-    color:var(--color-header);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -242,10 +280,12 @@ progress[value]{
     color: var(--color-light);
     background-color: var(--color-header);
 }
-.sbtn>a{
-    
-    color: inherit;
+.sbtn > a{
+    text-decoration: none;
+    color:inherit;
+    width: 12rem;
 
+    
 }
 
 .sServiceIcon {
@@ -270,6 +310,7 @@ progress[value]{
 .portspace{
      margin-bottom: 0;
      margin-top: 5rem;
+     transition: 1s;
 }
 
 .port-btn-container {
@@ -320,6 +361,7 @@ height:90vh;
 margin:0 5px 10px 5px;
 position: relative;
 padding-top: 0;
+transition: 1s;
 
 }
 
@@ -350,12 +392,15 @@ padding-top: 0;
 
 }
 
-.activeslide {
+.active {
   opacity:1;
+  transition-duration: 1s;
+  transform: scale(1.04);
 }
 
 .slide{
     opacity:0;
+    transition-duration: 1s ease;
 }
 
 .leftarrow {
@@ -404,6 +449,11 @@ padding-top: 0;
     }
 
 }
+
+
+
+
+
 
 
 
@@ -503,7 +553,7 @@ padding-top: 0;
 
 @media (max-width: 600px){
     .headerContainer{
-        height: 85vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -539,7 +589,13 @@ padding-top: 0;
     }
     .sServiceContainer{
         width:70%;
+        padding-bottom: 1.5rem;
     }
+    .sServiceContainer:hover{
+        width:72%;
+        height: 90vh;
+    }
+    
     .port-btn-container{
         width:90%;
         margin: 0 1.15rem 0 1.15rem;

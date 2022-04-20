@@ -4,7 +4,10 @@ const Skill = (props) => {
     return (<>
         <div className='progress'>
             <label>{props.label}</label>
-            <progress className={props.class} max={props.max} value={props.value}></progress>
+            <div className= {props.parentClass}>
+            <div className={props.class}>
+           </div>
+          </div>
         </div>
     </>
     );}

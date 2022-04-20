@@ -5,12 +5,12 @@ import {AiOutlineFire} from 'react-icons/ai'
 
 const About = () => {
    const Skills = [
-       {label : 'HTML', max : '100',  value : '90' , class:'html'},
-       {label : 'CSS', max : '100',  value : '90' , class:'css'},
-       {label : 'JAVASCRIPT', max : '100',  value : '79' , class:'javascript'},
-       {label : 'JQUERY', max : '100',  value : '69' , class:'jquery'},
-       {label : 'REACT', max : '100',  value : '70' , class:'react'},
-       {label : 'PHP', max : '100',  value : '60' , class:'php'}
+    {label : 'HTML', parentClass:'progressBar',class:'html'},
+    {label : 'CSS', parentClass:'progressBar' , class:'css'},
+    {label : 'JAVASCRIPT', parentClass:'progressBar' , class:'javascript'},
+    {label : 'JQUERY', parentClass:'progressBar' , class:'jquery'},
+    {label : 'REACT',parentClass:'progressBar' , class:'react'},
+    {label : 'PHP', parentClass:'progressBar' , class:'php'}
 
    ]
 
@@ -18,8 +18,8 @@ const About = () => {
         <div id='about' className='aboutContainer'>
             <h1 className='sectiontitle'>About</h1>
             <p className='aboutme'>Emilance is a prolific front end developer 
-            with vast knowledge in bilding a responsive, user friendly easily navigable and a professonal website, having 
-            completed several courses on Responsive web desgning web development, computer science and some technological tools like HTML, CSS , 
+            with vast knowledge in building  responsive, user friendly easily navigable and  professional websites, having 
+            completed several courses on Responsive web designing, web development, computer science and some technological tools like HTML, CSS , 
             Javascript, React, PHP and Jquery he has been able to complete diverse project that divulge his proficiency in front end  web  development</p>
             <div className='skillAndInfo' >
                 <div className='info'>
