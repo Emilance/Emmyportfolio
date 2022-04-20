@@ -236,8 +236,6 @@ progress[value]{
     text-decoration: none;
     color:var(--color-header);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-
 }
 
 .sbtn:hover  {
@@ -247,11 +245,13 @@ progress[value]{
 .sbtn>a{
     
     color: inherit;
+
 }
 
 .sServiceIcon {
     color: var(--color-main);
     padding:0 0 0 5px;
+    user-select: none;
 
 }
 .allservicecontainer{
