@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BsFacebook,BsPhone, BsWhatsapp, BsInstagram, BsTwitter, BsGithub} from 'react-icons/bs'
+import {BsFacebook,BsLinkedin, BsPhone, BsWhatsapp, BsInstagram, BsTwitter, BsGithub} from 'react-icons/bs'
 import {SiFiverr, SiUpwork} from 'react-icons/si'
 import {MdCastForEducation, MdAttachEmail} from 'react-icons/md'
 
@@ -34,23 +34,27 @@ class ContactInfo extends Component {
                         WEBSITE: <span>{website}</span>
                     </p>
                 <div className='socialIcon'>
-                <a href='fb.com'>
+                <a href='08140711202'>
                     <BsWhatsapp className='icon whatsapp' size='25px'/>
                 </a>
-                <a href='fb.com'>
+                <a href='https://www.instagram.com/eminence.x/'>
                     <BsInstagram className='icon instagram' size='25px'/>
                 </a>
-                <a href='fb.com'>
+                <a href='https://twitter.com/AlabiDamilolaD3'>
                     <BsTwitter className='icon twitter' size='25px'/>
                 </a>
-                <a href='fb.com'>
+                <a href='https://web.facebook.com/damiloladaniel.alabi'>
                     <BsFacebook className='icon facebook' size='25px'/>
                 </a>
+                <a href='https://www.linkedin.com/in/damilola-daniel-alabi-120036218/'>
+                    <BsLinkedin className='icon twitter' size='25px'/>
+                </a>
+                
                     
                 </div>
                 
                       <button className='contactButton'>
-                          <a href='fiverr.com'>
+                          <a href='https://www.fiverr.com/emilance?up_rollout=true'>
                               <span>
 
                               Contact Me on Fiverr
