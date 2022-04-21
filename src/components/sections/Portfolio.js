@@ -4,7 +4,7 @@ import {AiOutlineArrowRight,  AiOutlineArrowLeft } from 'react-icons/ai'
 
 
 const Portfolio = ({slides}) => {
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(2)
   const length = slides.length;
  
 

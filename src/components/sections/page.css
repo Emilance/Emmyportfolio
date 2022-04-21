@@ -449,10 +449,235 @@ transition: 1s;
     }
 
 }
+/*-----Contact secion ------*/
+.contactcontainer{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactBook{
+    height: 73%;
+    box-shadow:15px 10px 20px  var(--color-header)  ;
+    width:70vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding-bottom: 0.3rem;
+   animation:boxshadow 3s  linear  infinite;
+}
+
+@keyframes boxshadow {
+    10% {
+        box-shadow:14px 10px 20px  var(--color-header)  ;
+    }
+    30%{
+        box-shadow:18px 10px 25px  var(--color-header)  ;
+    }
+    60%{
+        box-shadow:20px 10px 20px  var(--color-header)  ;
+    }
+    90%{
+        box-shadow:25px 10px 30px  var(--color-header)  ;
+    }
+    
+}
+
+.ContactInfo{
+    flex:1;
+    margin-top: 1.8rem;
+    border-right: 3px groove var(--color-primary);
+
+}
+.cicon{
+    margin-right: 10px;
+}
+.ContactInfo > p {
+    margin:2rem;
+    font-size: 1.25rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.socialIcon{
+    margin:3rem 3rem 1rem 3rem;
+    width:auto ;
+    border-radius: 1rem;
+    box-shadow:10px 5px 15px  var(--color-primary)  ;
+    display: flex;
+    
+
+}
+
+.socialIcon > a {
+    text-decoration: none;
+    color:var(--color-header);
+}
+
+.socialIcon > a >.whatsapp{
+      color: green;
+}
+.twitter{
+    color:rgb(0, 183, 255);
+}
+.instagram{
+    color:rgb(172, 4, 135);
+}
+.facebook{
+    color: rgb(38, 8, 207)
+}
+
+.icon {
+       margin: 1rem;
+}
+
+
+.contactButton{
+    margin-left: 2rem;
+    width:14rem;
+    color:var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.contactButton:hover{
+   background-color: var(--color-light);
+   color: var(--color-header);
+
+}
+
+.contactButton> a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:inherit;
+    background-color: inherit;
+    height: 1.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+    
+}
+.Ficon{
+    margin-left: 10px;
+    color:green;
+}
+
+.ContactForm{
+    flex:1;
+  
+}
+.ContactForm > form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 2rem;
+   
+}
+.ContactForm > form >h4{
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ContactForm > form >.forminput{
+      height: 3.2rem;
+      margin:0.5rem;
+      display: flex;
+      flex-direction: column;
+}
+.forminput  >input {
+    height:1.4rem;
+    width:70%;
+    padding: rem;
+}
+.forminput >label, .textarea > label{
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+.textarea{
+    height:5rem;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.textarea > textarea{
+    height:100px;
+    width: 70%;
+    margin-bottom: 0.5rem;
+    
+}
+
+form> .submit{
+  width:40%;
+  height:2rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+form> .submit:hover{
+    color:var(--color-white);
+    background-color: var(--color-primary);
+   }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- CircularNav--*/
+.cirularNavContainer{
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+}
+
+.linkcontainer{
+    height:25rem;
+    width:25rem;
+    background-color:var(--color-header);
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.link{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top:0.5rem;
+    color: var(--color-light);
+    
+}
+
+.link:hover{
+    color: var(--color-primary);
+}
+
+.Home {--rotation: 270deg;}
+.About {--rotation: 315deg;}
+.Service {--rotation: 225deg;}
+.Portfolio {--rotation: 360deg;}
+.Contact {--rotation: 45deg;}
 
 
 
@@ -547,6 +772,23 @@ transition: 1s;
         display: flex;
         
     }
+    .contactBook{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    
+        
+    }
+    .contactcontainer{
+        height: 199vh;
+        justify-content: flex-start;
+        
+    }
+    .ContactForm > form {
+    padding-left: 2rem;
+    margin-top: 1rem;
+    
+    }
     
 }
 
@@ -599,6 +841,15 @@ transition: 1s;
     .port-btn-container{
         width:90%;
         margin: 0 1.15rem 0 1.15rem;
+    }
+    .contactBook{
+        width:90%;
+    }
+    .ContactInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (max-width: 990px){
