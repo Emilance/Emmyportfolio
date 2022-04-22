@@ -591,7 +591,13 @@ transition: 1s;
 .forminput  >input {
     height:1.4rem;
     width:70%;
-    padding: rem;
+    border:none;
+    border-bottom:1px outset var(--color-header);
+    }
+.forminput  >input:focus{
+    font-size: 1rem;
+    outline:none;
+    border-bottom:5px outset var(--color-primary);
 }
 .forminput >label, .textarea > label{
     font-size: 1rem;
@@ -829,11 +835,11 @@ form> .submit:hover{
 
     }
     .sServiceContainer{
-        width:70%;
+        width:80%;
         padding-bottom: 1.5rem;
     }
     .sServiceContainer:hover{
-        width:72%;
+        width:82%;
         height: 90vh;
     }
     
@@ -861,6 +867,12 @@ form> .submit:hover{
     align-items: flex-start;
     padding-left: 4rem;
    
+}
+.ContactForm > form >.forminput  .textarea{
+    width:100%;
+}
+.forminput> input, .textarea>textarea {
+    width:80%;
 }
 }
 @media (max-width: 990px){
