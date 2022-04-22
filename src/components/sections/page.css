@@ -501,7 +501,7 @@ transition: 1s;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .socialIcon{
-    margin:3rem 3rem 1rem 3rem;
+    margin:3rem 3rem 1rem 1rem;
     width:auto ;
     border-radius: 1rem;
     box-shadow:10px 5px 15px  var(--color-primary)  ;
