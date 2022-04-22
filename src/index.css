@@ -29,6 +29,7 @@ body {
   box-shadow:10px 5px 15px  var(--color-primary)  ;
   border-radius: 15px;
   margin:3px 0 3px 0;
+  position: relative;
   background-color: var(--color-white);
 }
 
