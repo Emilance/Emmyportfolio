@@ -1,11 +1,39 @@
-import React, { useState } from 'react';
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
+import React, { Fragment, useState } from 'react';
+import FormInput from './FormInput';
 
 
 const ContactForm = () => {
+    const formInputs  = [
+        [
+            {element:'input', type: 'text',  label: 'Name',  name: 'name' },
+            {element:'input', type: 'email',  label: 'Email',  name: 'email' },
+            {element:'input', type: 'tel',    label:'Phone',  name: 'tel' }
+        ],
+        [
+            {element:'textarea', label:'Message', name:'message'}
+        ]
+    ]
     return ( 
         <div className='ContactForm'>
+            
             <form >
-                <h4>Contact Me Here</h4 >
+            <h4>Contact Me Here</h4 >
+                {formInputs.map((element, eindex) => {
+                   return(
+                       <Fragment key={eindex}>
+                         
+                          { element.map((e, index) => {
+                               return(
+                                <FormInput {...e} key={index} />
+
+                               )                                
+                          })}
+                       </Fragment>
+                   )
+                })}
+
+                 {/* <h4>Contact Me Here</h4 >
                 <div className='forminput' >
                     <label>Name</label>
                     <input type='text' name='name' id='name'/>
@@ -21,7 +49,7 @@ const ContactForm = () => {
                 <div className=' textarea' >
                     <label>Message</label>
                     <textarea name='message'id='message'/>
-                </div>
+                </div> */}
                 <input className='submit' type='submit' name='submit' value="SEND"/>
             </form>
         </div>

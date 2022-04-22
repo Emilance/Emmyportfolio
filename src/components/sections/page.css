@@ -453,19 +453,19 @@ transition: 1s;
 }
 /*-----Contact secion ------*/
 .contactcontainer{
-    height: 110vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .contactBook{
-    height: 73%;
+    height: 90vh;
     box-shadow:15px 10px 20px  var(--color-header)  ;
     width:70vw;
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-bottom: 0.3rem;
    animation:boxshadow 3s  linear  infinite;
 }
@@ -616,7 +616,16 @@ transition: 1s;
     height:100px;
     width: 70%;
     margin-bottom: 0.5rem;
+    border: none;
+    border-bottom:1px outset var(--color-header);
+
     
+}
+
+.textarea > textarea:focus{
+    outline: none;
+    border-bottom:5px outset var(--color-primary);
+
 }
 
 form> .submit{
@@ -635,8 +644,99 @@ form> .submit:hover{
 
 
 
+/*---------footer----*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    height:30vh;
+    width:100%;
+    margin-top: 2rem;
+    background-color: var(--color-primary);
+}
+.footertop{
+    flex:4;
+}
+
+.footerbottom{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.footerbottom >h3 >a{
+   text-decoration: none;
+   color: var(--color-header);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.footerbottom >h3 >a:hover, .github:hover{
+    color:var(--color-light);
+}
+.footerbottom> p{
+    color: var(--color-light);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation:movingcolor1 6s  linear  infinite;
+
+}
+
+.footerbottom> p>span{
+    color:var(--color-header);
+    animation:movingcolor 6s  linear  infinite;
+
+    
+}
+@keyframes movingcolor {
+    10% {
+        color:var(--color-header);
+    }
+    30%{
+        color:var(--color-light);
+    }
+    60%{
+        color:var(--color-header);
+    }
+    80%{
+        color:var(--color-light);
+    }
+    100%{
+        color:var(--color-header);
+    }
+}
+
+@keyframes movingcolor1 {
+    10% {
+        color:var(--color-light);
+    }
+    30%{
+        color:var(--color-header);
+    }
+    60%{
+        color:var(--color-light);
+    }
+    80%{
+        color:var(--color-header);
+    }
+    100%{
+        color:var(--color-light);
+    }
+}
 
 
+.LsocialIcon{
+    margin:.5rem;
+    display: flex;
+    margin-left: 2rem;
+    
+
+}
+.Licon {
+    margin:0.5rem;
+   color:var(--color-header);
+}
 
 
 
@@ -859,6 +959,9 @@ form> .submit:hover{
     }
     .ContactInfo >p{
         font-size: 1.1rem;
+    }
+    .footerbottom{
+        flex-direction: column;
     }
     
 .info{
