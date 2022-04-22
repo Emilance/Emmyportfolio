@@ -51,7 +51,8 @@
 .title{
     font-size: 4rem;
     color: var(--color-light);
-
+    
+    
 }
 .subTitle{
     font-size:1.5rem ;
@@ -703,6 +704,8 @@ form> .submit:hover{
 
 
 @media (min-width: 1000px){
+   
+    
     .slider > img {
         width:70vh ;
         height: 50vh;
@@ -727,7 +730,6 @@ form> .submit:hover{
         margin-left: 3%;
     }
     .Emilanceimage{
-        position: fixed; 
         right:20%;
         z-index: 5;
     }
@@ -751,7 +753,7 @@ form> .submit:hover{
     }
     .Emilanceimage{
         position: relative; 
-        right:0;
+        right:5px;
         z-index: 5;
     }
     .aboutme{
@@ -797,7 +799,7 @@ form> .submit:hover{
     .headerContainer{
         height: 90vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         position: relative;
         align-items: center;
@@ -805,21 +807,17 @@ form> .submit:hover{
     }
     
     .titleContainer{
-        position:absolute;
-        top :15rem;
+       
         text-align: center;
         z-index: 5;
     }
      .Emilanceimage{
-         position: relative;
-         top:-5rem;   
          z-index: 5;
-        
      }
      .emmyimg{
          width:13rem;
          height: 13rem;
-     }
+     } 
      .about-btn-container{
         margin-top: 3.5rem;
     }
@@ -856,4 +854,15 @@ form> .submit:hover{
   .about-btn-container{
       margin-top: 6rem;
   }
+  .titleContainer{
+    margin-right: 10%;
+    margin-left: 3%;
+    width: 80%;
+}
+.Emilanceimage{
+    position: relative; 
+    right:3%;
+    z-index: 5;
+}
+  
 }
