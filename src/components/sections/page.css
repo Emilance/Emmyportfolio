@@ -954,8 +954,14 @@ form> .submit:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:flex-start;
+        align-items:center;
         padding-left: 2rem;
+    }
+    .socialIcon{
+        margin: 3rem 0 2rem 0;
+    }
+    .contactButton{
+        margin-left: 0;
     }
     .ContactInfo >p{
         font-size: 1.1rem;
