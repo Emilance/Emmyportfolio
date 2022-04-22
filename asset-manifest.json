@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Emmyportfolio/static/css/main.bc78b246.css",
+    "main.css": "/Emmyportfolio/static/css/main.c9d01e56.css",
     "main.js": "/Emmyportfolio/static/js/main.e1edfdd2.js",
     "static/js/787.464d94aa.chunk.js": "/Emmyportfolio/static/js/787.464d94aa.chunk.js",
     "static/media/fabian-irsara-67l-QujB14w-unsplash.jpg": "/Emmyportfolio/static/media/fabian-irsara-67l-QujB14w-unsplash.edffe4ae730bb435e57e.jpg",
@@ -9,12 +9,12 @@
     "static/media/alesia-kazantceva-VWcPlbHglYc-unsplash.jpg": "/Emmyportfolio/static/media/alesia-kazantceva-VWcPlbHglYc-unsplash.fdc0144eb48191db7731.jpg",
     "static/media/re51.png": "/Emmyportfolio/static/media/re51.7b89e602bf1d4831a9c2.png",
     "index.html": "/Emmyportfolio/index.html",
-    "main.bc78b246.css.map": "/Emmyportfolio/static/css/main.bc78b246.css.map",
+    "main.c9d01e56.css.map": "/Emmyportfolio/static/css/main.c9d01e56.css.map",
     "main.e1edfdd2.js.map": "/Emmyportfolio/static/js/main.e1edfdd2.js.map",
     "787.464d94aa.chunk.js.map": "/Emmyportfolio/static/js/787.464d94aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc78b246.css",
+    "static/css/main.c9d01e56.css",
     "static/js/main.e1edfdd2.js"
   ]
 }
