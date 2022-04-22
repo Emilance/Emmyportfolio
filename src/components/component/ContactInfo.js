@@ -16,29 +16,29 @@ class ContactInfo extends Component {
         return(
             <div className='ContactInfo'>
                     <p > 
-                    <MdAttachEmail className='cicon' size='25px'/>
+                    <MdAttachEmail className='cicon' size='23px'/>
                         EMAIL: <span>{email}</span>
                     </p>
 
                     <p > 
-                    <BsPhone className='cicon' size='25px'/>
+                    <BsPhone className='cicon' size='23px'/>
                         PHONE: <span>{phone}</span>
                     </p>
                     <p > 
-                    <BsWhatsapp className='cicon' size='25px'/>
+                    <BsWhatsapp className='cicon' size='23px'/>
                         WHATSAPP: <span>{whatsapp}</span>
                     </p>
 
                     <p > 
-                    <MdCastForEducation className='cicon' size='25px'/>
+                    <MdCastForEducation className='cicon' size='23px'/>
                         WEBSITE: <span>{website}</span>
                     </p>
                 <div className='socialIcon'>
                 <a href='08140711202'>
-                    <BsWhatsapp className='icon whatsapp' size='25px'/>
+                    <BsWhatsapp className='icon whatsapp' size='22px'/>
                 </a>
                 <a href='https://www.instagram.com/eminence.x/'>
-                    <BsInstagram className='icon instagram' size='25px'/>
+                    <BsInstagram className='icon instagram' size='23px'/>
                 </a>
                 <a href='https://twitter.com/AlabiDamilolaD3'>
                     <BsTwitter className='icon twitter' size='25px'/>

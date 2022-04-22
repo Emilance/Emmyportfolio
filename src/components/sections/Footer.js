@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='footerbottom'>
 
 
-               <h3><a href='#'>Github Account <BsGithub className='Licon github' size='15px'/></a></h3>
+               <h3><a href='https://github.com/emilance'>Github Account <BsGithub className='Licon github' size='15px'/></a></h3>
              <div className='LsocialIcon'>
                 <a href='08140711202'>
                     <BsWhatsapp className='Licon whatsapp' size='20px'/>
