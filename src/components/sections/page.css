@@ -114,7 +114,8 @@
 }
 
 .info > p {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     display: flex;
 }
 
 .info > p > span {
@@ -378,7 +379,7 @@ transition: 1s;
 }
 
 .aboutport{
-    width:50vw;
+    width:55vw;
     height:5rem;
     border:1px solid black;
 }
@@ -782,7 +783,7 @@ form> .submit:hover{
         
     }
     .contactcontainer{
-        height: 199vh;
+        height: 210vh;
         justify-content: flex-start;
         
     }
@@ -847,8 +848,20 @@ form> .submit:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items:flex-start;
+        padding-left: 2rem;
     }
+    .ContactInfo >p{
+        font-size: 1.1rem;
+    }
+    
+.info{
+    font-size: 1.1rem;
+    font-weight: 400;
+    align-items: flex-start;
+    padding-left: 4rem;
+   
+}
 }
 @media (max-width: 990px){
   .about-btn-container{

@@ -4,6 +4,8 @@
     --color-header:rgb(14, 1, 1);
     --color-white:white;
     --color-black:black;
+    --color-primarytrans :rgba(210, 105, 30, 0.849);
+
 }
 
 .NavBarContainer{
@@ -134,11 +136,12 @@ padding :5px;
 
 .Hamburger{
     color: var(--color-black);
-    background-color:var(--color-primary);
+    background-color:var(--color-primarytrans);
     border-radius: 5px;
     position: fixed;
-    right: 20px;
+    right: 10px;
     top: 20px;
+    z-index: 1000;
 }
 
 
