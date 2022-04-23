@@ -13,6 +13,8 @@ class FormInput extends Component {
                 type={this.props.type} 
                  name={this.props.name} 
                  id={this.props.name}
+                 value={this.props.value}
+                 onChange= {e => this.props.onChange(e)}
                  />
                 </div>
                 :
@@ -21,6 +23,8 @@ class FormInput extends Component {
                <textarea 
                  name={this.props.name} 
                 id={this.props.name}
+                value={this.props.value}
+                onChange= {e => this.props.onChange(e)}
             />
         </div>
              }  

@@ -221,7 +221,7 @@
 
 /* --- Sevices section ---*/
 .sServiceContainer {
-    height: 88vh;
+    height: auto;
     box-shadow:7px 5px 15px  var(--color-primary)  ;
     width:30%;
     margin:1rem;
@@ -233,7 +233,8 @@
 
 .sServiceContainer:hover{
     width:31%;
-    height: 90vh;
+    transform: scale(1.04);
+
 }
 
 .serviceDisplayArea{
@@ -460,7 +461,7 @@ transition: 1s;
     flex-direction: column;
 }
 .contactBook{
-    height: 90vh;
+    height: auto;
     box-shadow:15px 10px 20px  var(--color-header)  ;
     width:70vw;
     display: flex;
@@ -940,7 +941,8 @@ form> .submit:hover{
     }
     .sServiceContainer:hover{
         width:82%;
-        height: 90vh;
+        transform: scale(1.04);
+
     }
     
     .port-btn-container{
