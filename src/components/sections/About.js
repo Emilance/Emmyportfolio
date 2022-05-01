@@ -26,7 +26,7 @@ const About = () => {
                      <Info
                        name= "Alabi Daniel"
                        education= "Undergraduate "
-                        email= "Emmyfedev@gmail.com"
+                        email= " Emmyfedev@gmail.com"
                         Phone = "08140711202"
                         location= "Ile-ife, Osun state, Nigeria"
                      />

@@ -3,9 +3,9 @@ import React, { Fragment, useState } from 'react';
 import FormInput from './FormInput';
 
 
-const initialvalue = [{ name: '', email:'', phone: '',message:'' }]
 const ContactForm = () => {
-    const [formdata, setFormdata] = useState({initialvalue})
+  const initialvalue = { name: '', email:'', phone: '',message:'' }
+ const [formdata, setFormdata] = useState(initialvalue)
 
 
     const formInputs  = [
@@ -27,15 +27,17 @@ const ContactForm = () => {
                    return(
                        <Fragment key={eindex}>
                          
-                          { element.map((v, index) => {
+                          { element.map((v, index,formdata) => {
                                console.log(v.name)
                                return(
                                 <FormInput {...v} key={index} 
                                  
-                                value = {v.name}
-                                onChange = {e => {
-                                    setFormdata(() =>  e.target.value  )
-                                }}
+                                
+                                 onChange= {e => {
+                                     setFormdata({[v.name]: e.target.value}) 
+                                     console.log(e.target.value)
+                                    
+                                    }}
                                 />
 
                                )                                

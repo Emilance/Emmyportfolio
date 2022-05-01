@@ -116,10 +116,14 @@
 .info > p {
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      display: flex;
+     width: 100%;
+     
+     
 }
 
 .info > p > span {
     color:var(--color-main);
+    margin-left: 1rem;
 }
 .skill{
     font-size: 1.3rem;
@@ -374,9 +378,10 @@ transition: 1s;
 }
 
 .slider > img {
-    width:50vw ;
+    width:50% ;
     height: 40vh;
     margin: 1.5rem;
+    box-shadow: 5px 5px 10px black;
 }
 
 .aboutport{
@@ -652,6 +657,8 @@ form> .submit:hover{
     height:30vh;
     width:100%;
     margin-top: 2rem;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
     background-color: var(--color-primary);
 }
 .footertop{
@@ -851,6 +858,14 @@ form> .submit:hover{
         width:70%;
         margin:1rem
     }
+    
+    
+}
+@media (max-width:700px) {
+    .footerbottom{
+        flex-direction: column;
+    }
+    
 }
 
 @media (max-width: 900px){
@@ -876,7 +891,14 @@ form> .submit:hover{
     }
     .info {
         margin-top: 0;
+        display: flex;
         align-items: center;
+        font-weight: 400;
+        width: 100%;
+        margin: 4rem;
+      
+           
+        
     }
     .about-btn-container{
         display: flex;
@@ -902,7 +924,23 @@ form> .submit:hover{
     
 }
 
+@media (max-width:640px) {
+    .allservicecontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+    }
+    .sServiceContainer{
+        width:80%;
+        padding-bottom: 1.5rem;
+    }
+    .sServiceContainer:hover{
+        width:82%;
+        transform: scale(1.04);
+
+    }
+}
 @media (max-width: 600px){
     .headerContainer{
         height: 90vh;
@@ -949,6 +987,10 @@ form> .submit:hover{
         width:90%;
         margin: 0 1.15rem 0 1.15rem;
     }
+    .slider > img {
+        width:60vw;
+        margin-top: 2.5rem;
+    }
     .contactBook{
         width:90%;
     }
@@ -973,10 +1015,12 @@ form> .submit:hover{
     }
     
 .info{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
-    align-items: flex-start;
-    padding-left: 4rem;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    
    
 }
 .ContactForm > form >.forminput  .textarea{
