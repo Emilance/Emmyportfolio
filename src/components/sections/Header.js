@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './page.css'
-import image from '../image/alesia-kazantceva-VWcPlbHglYc-unsplash.jpg';
-import emmyImage from '../image/re51.png'
+import image from '../image/Emilance Portfolio.jpg';
+import emmyImage from '../image/Emilance.png'
 
 
 const headerSubtitle = 'Proficient Frontend developer, Web designer, Digital marketer';

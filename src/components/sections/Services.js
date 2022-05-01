@@ -1,8 +1,8 @@
 import React from 'react'
 import SingleService from '../component/SingleService';
-import serviceimg1 from '../image/domenico-loia-hGV2TfOh0ns-unsplash.jpg';
-import serviceimg2 from '../image/fabian-irsara-67l-QujB14w-unsplash.jpg';
-import serviceimg3 from '../image/igor-miske-Px3iBXV-4TU-unsplash.jpg';
+import serviceimg1 from '../image/front end developer.jpg';
+import serviceimg2 from '../image/CMS design.jpg';
+import serviceimg3 from '../image/figma.jpg';
 
 
 
