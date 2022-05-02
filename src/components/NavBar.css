@@ -48,6 +48,13 @@
    
 }
 
+.NavBarContainer > button>a{
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+
 .NavBarContainer > button:hover{
     background-color: var(--color-white);
     color:var(--color-black);
@@ -139,7 +146,7 @@ padding :5px;
     background-color:var(--color-primarytrans);
     border-radius: 5px;
     position: fixed;
-    right: 20px;
+    right: 10px;
     top: 20px;
     z-index: 1000;
 }

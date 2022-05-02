@@ -151,7 +151,7 @@
     background-color: var(--color-header);
 
 }
-.html,.css, .javascript, .jquery, .react, .php{
+.html,.css, .javascript, .bootstrap, .react, .php{
     height:1.3rem;
     background-color: var(--color-primary);
     animation:progress 7s  linear  infinite;
@@ -181,8 +181,8 @@
 .javascript{
     width: 79%;
 }
-.jquery{
-    width: 69%;
+.bootstrap{
+    width: 90%;
 }
 .react{
     width: 70%;
@@ -385,7 +385,7 @@ transition: 1s;
 }
 
 .aboutport{
-    width:55vw;
+    width:70vw;
     height:5rem;
     border:1px solid black;
 }

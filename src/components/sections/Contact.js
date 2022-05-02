@@ -4,7 +4,7 @@ import ContactInfo from '../component/ContactInfo';
 
 const Contact = () => {
     return ( 
-        <div className='contactcontainer'>
+        <div id="contact" className='contactcontainer'>
                <h1 className='sectiontitle'>Contact</h1>
                <div className='contactBook'>
                    <ContactInfo

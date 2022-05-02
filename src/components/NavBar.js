@@ -10,7 +10,7 @@ function NavBar() {
                    <Navigation/>
                    <MobileNavigation/>
                  </div>
-                 <button>HIRE</button>
+                 <button><a href='#contact'>HIRE</a></button>
             
     </div> );
 }

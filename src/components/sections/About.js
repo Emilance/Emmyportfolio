@@ -8,7 +8,7 @@ const About = () => {
     {label : 'HTML', parentClass:'progressBar',class:'html'},
     {label : 'CSS', parentClass:'progressBar' , class:'css'},
     {label : 'JAVASCRIPT', parentClass:'progressBar' , class:'javascript'},
-    {label : 'JQUERY', parentClass:'progressBar' , class:'jquery'},
+    {label : 'BOOTSTRAP', parentClass:'progressBar' , class:'bootstrap'},
     {label : 'REACT',parentClass:'progressBar' , class:'react'},
     {label : 'PHP', parentClass:'progressBar' , class:'php'}
 
@@ -44,7 +44,7 @@ const About = () => {
             <div className='about-btn-container'>
             <button className='btn'><a href='#'>Certification</a></button>
             <button className='btn'><a href='#'>Resume</a></button>
-            <button className='btn'><a href='#'>Portfolio</a></button>
+            <button className='btn'><a href='#portfolio'>Portfolio</a></button>
             </div>
         </div>
      );
