@@ -156,6 +156,9 @@ padding :5px;
     .Navigation{
         display: none;
     }
+    .NavBarContainer{
+        border-radius:0;
+    }
     .MobileNavigation{
         display: flex;
     }

@@ -911,6 +911,9 @@ form> .submit:hover{
     
         
     }
+    .ContactInfo{
+        border:none;
+    }
     .contactcontainer{
         height: 210vh;
         justify-content: flex-start;
@@ -999,7 +1002,14 @@ form> .submit:hover{
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        padding-left: 2rem;
+        padding-left: 0;
+     
+    }
+
+    .ContactInfo > p{
+        width: 90%;
+        text-align: center;
+        font-size: 1.1rem;
     }
     .socialIcon{
         margin: 3rem 0 2rem 0;
