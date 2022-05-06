@@ -1,0 +1,74 @@
+.certParent{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+  
+ 
+}
+
+.nextButton{
+    z-index: 500;
+    position: absolute;
+    background-color: var(--color-light);
+    height: 4rem;
+    width: 3rem;
+    top:45%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+}
+
+.prevButton{
+    z-index: 500;
+    position: absolute;
+    background-color: var(--color-light);
+    height: 4rem;
+    width: 3rem;
+    top:45%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+}
+
+
+.nextButton >h1  .prevButton >h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nextButton:hover, .prevButton:hover{
+    background-color: chocolate;
+    box-shadow: 5px 5px 5px black;
+}
+
+.certContainer{
+    display: flex;
+    overflow-x: hidden;
+    margin: 0 2rem;
+
+
+}
+
+.sCertContainer{
+    margin: 2rem;
+    width: 58vw;
+    border:2px solid black;
+    box-shadow: 5px 5px 7px black;
+    height: 60vh;
+  
+}
+
+.sCertContainer> img{
+
+    width:58vw;
+    height:60vh;
+}

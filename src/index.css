@@ -6,6 +6,10 @@
   --color-black:black;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
  
   width: 100%;

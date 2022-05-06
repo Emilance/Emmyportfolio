@@ -38,6 +38,10 @@ const Portfolio = ({slides}) => {
                   <div className='aboutport'>
                         <h3>{data.title}</h3>
                         <p>{data.subtitle}</p>
+                        <div className='portUButtonContainer'>
+                       
+                         <a className='livebtn' target="_blank" href={data.live} >LIVE </a>
+                      </div>
                   </div>
               </div>
       

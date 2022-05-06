@@ -8,7 +8,7 @@ import {FaWordpressSimple, FaReact, FaFigma} from 'react-icons/fa';
 
 
 const PortSpace = () => {
-    const [Display, setDisplay] = useState("web")
+    const [Display, setDisplay] = useState("front")
 
     const  DisplayWebDesignPort = () =>{
         setDisplay("web")

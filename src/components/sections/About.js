@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Info from '../component/Info';
 import Skill from '../component/Skill';
 import {AiOutlineFire} from 'react-icons/ai'
+import Certification from '../Certification';
 
 const About = () => {
+ const [cert, setCert]  = useState(false);
+
    const Skills = [
     {label : 'HTML', parentClass:'progressBar',class:'html'},
     {label : 'CSS', parentClass:'progressBar' , class:'css'},
@@ -14,6 +17,15 @@ const About = () => {
 
    ]
 
+
+   const toggleCert = () =>{
+     if(cert=== true){
+         setCert(false)
+     }else{
+
+         setCert(true)
+     }
+   }
     return ( 
         <div id='about' className='aboutContainer'>
             <h1 className='sectiontitle'>About</h1>
@@ -41,9 +53,10 @@ const About = () => {
                          } ) }
                 </div>
             </div>
+            {cert === true && <Certification   setCert={setCert}/>}
             <div className='about-btn-container'>
-            <button className='btn'><a href='#'>Certification</a></button>
-            <button className='btn'><a href='#'>Resume</a></button>
+            <button onClick={toggleCert} className='btn'>Certification</button>
+            <button className='btn'>Resume</button>
             <button className='btn'><a href='#portfolio'>Portfolio</a></button>
             </div>
         </div>

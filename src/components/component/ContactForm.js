@@ -18,25 +18,30 @@ const ContactForm = () => {
             {element:'textarea', label:'Message', name:'message'}
         ]
     ]
+
+    
+    const submitForm = (e)=> {
+        e.preventDefault();
+        alert('Contact form is currently unavailable, kindly contact me through other means. Thanks for your co-operation ')
+    }
     return ( 
         <div className='ContactForm'>
             
-            <form >
+            <form onSubmit={submitForm}>
             <h4>Contact Me Here</h4>
                 {formInputs.map((element, eindex) => {
                    return(
                        <Fragment key={eindex}>
                          
-                          { element.map((v, index,formdata) => {
+                          { element.map((v, index) => {
                                console.log(v.name)
                                return(
                                 <FormInput {...v} key={index} 
                                  
-                                
-                                 onChange= {e => {
+                                 value={formdata.name}              
+                                onChange= {e => {
                                      setFormdata({[v.name]: e.target.value}) 
                                      console.log(e.target.value)
-                                    
                                     }}
                                 />
 
