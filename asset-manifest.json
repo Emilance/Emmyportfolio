@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Emmyportfolio/static/css/main.631ab381.css",
-    "main.js": "/Emmyportfolio/static/js/main.cb49a1d3.js",
+    "main.css": "/Emmyportfolio/static/css/main.10965aee.css",
+    "main.js": "/Emmyportfolio/static/js/main.00d71b4c.js",
     "static/js/787.464d94aa.chunk.js": "/Emmyportfolio/static/js/787.464d94aa.chunk.js",
     "static/media/CMS design.jpg": "/Emmyportfolio/static/media/CMS design.e5ed81e95deffe7d033c.jpg",
     "static/media/figma.jpg": "/Emmyportfolio/static/media/figma.10ade459bca9e436d3bc.jpg",
@@ -9,12 +9,12 @@
     "static/media/Emilance Portfolio.jpg": "/Emmyportfolio/static/media/Emilance Portfolio.2ecef32b92ae4d47656a.jpg",
     "static/media/Emilance.png": "/Emmyportfolio/static/media/Emilance.7b89e602bf1d4831a9c2.png",
     "index.html": "/Emmyportfolio/index.html",
-    "main.631ab381.css.map": "/Emmyportfolio/static/css/main.631ab381.css.map",
-    "main.cb49a1d3.js.map": "/Emmyportfolio/static/js/main.cb49a1d3.js.map",
+    "main.10965aee.css.map": "/Emmyportfolio/static/css/main.10965aee.css.map",
+    "main.00d71b4c.js.map": "/Emmyportfolio/static/js/main.00d71b4c.js.map",
     "787.464d94aa.chunk.js.map": "/Emmyportfolio/static/js/787.464d94aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.631ab381.css",
-    "static/js/main.cb49a1d3.js"
+    "static/css/main.10965aee.css",
+    "static/js/main.00d71b4c.js"
   ]
 }
