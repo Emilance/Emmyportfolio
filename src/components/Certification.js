@@ -5,14 +5,16 @@ import './Certifications.css'
 
 const Certification = ({ setCert }) => {
 
-let certContainer =document.querySelector('.certContainer');
 
 const nextCert = () => {
-    certContainer.scrollLeft +=100
+    let certContainer =document.querySelector('.certContainer');
+
+    certContainer.scrollLeft +=100;
 }
 const prevCert = () =>{
+    let certContainer =document.querySelector('.certContainer');
 
- certContainer.scrollLeft -=100
+ certContainer.scrollLeft -=100;
 }
   
     return ( 

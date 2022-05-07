@@ -1,5 +1,5 @@
 {
-  "homepage":"http://Emilance.github.io/Emmyportfolio",
+  "homepage": "http://Emilance.github.io/Emmyportfolio",
   "name": "emyportfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,11 +13,12 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "redux-devtools-extension": "^2.13.9",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
