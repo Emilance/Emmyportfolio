@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Emmyportfolio/static/css/main.7887446a.css",
+    "main.css": "/Emmyportfolio/static/css/main.1c6202e5.css",
     "main.js": "/Emmyportfolio/static/js/main.27e8e2f5.js",
     "static/media/CMS design.jpg": "/Emmyportfolio/static/media/CMS design.e5ed81e95deffe7d033c.jpg",
     "static/media/figma.jpg": "/Emmyportfolio/static/media/figma.10ade459bca9e436d3bc.jpg",
@@ -8,11 +8,11 @@
     "static/media/Emilance Portfolio.jpg": "/Emmyportfolio/static/media/Emilance Portfolio.2ecef32b92ae4d47656a.jpg",
     "static/media/Emilance.png": "/Emmyportfolio/static/media/Emilance.37f7723e5cc7ae1eb877.png",
     "index.html": "/Emmyportfolio/index.html",
-    "main.7887446a.css.map": "/Emmyportfolio/static/css/main.7887446a.css.map",
+    "main.1c6202e5.css.map": "/Emmyportfolio/static/css/main.1c6202e5.css.map",
     "main.27e8e2f5.js.map": "/Emmyportfolio/static/js/main.27e8e2f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.7887446a.css",
+    "static/css/main.1c6202e5.css",
     "static/js/main.27e8e2f5.js"
   ]
 }
