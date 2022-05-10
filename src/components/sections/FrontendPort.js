@@ -39,8 +39,8 @@ const Portfolio = ({slides}) => {
                         <h3>{data.title}</h3>
                         <p>{data.subtitle}</p>
                       <div className='portUButtonContainer'>
-                         <a href={data.sourceCode}  target="_blank">SOURCE CODE</a  >
-                         <a   key={index} className='livebtn' href={data.live} target="_blank">LIVE </a>
+                         <a href={current == data.id ? data.sourceCode: null} target="_blank">SOURCE CODE</a  >
+                         <a   key={index} className='livebtn' href={current == data.id ? data.live: null} target="_blank">LIVE </a>
                       </div>
                   </div>
               </div>

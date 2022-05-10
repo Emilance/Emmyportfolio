@@ -14,17 +14,19 @@ export const Portfoliodata = [
     {
         image: '/Sweetsorrella.PNG',
         title: "SWEETSORRELLA",
-        subtitle:'Sweetsorrella is a podcast website designed on Squarespace'
+        subtitle:'Sweetsorrella is a podcast website designed on Squarespace',
+        live :"http://www.sweetsorrella.com/"
     },
     {
         image: '/totswap filter.PNG',
         title: "TOTSWAPSHOP",
-        subtitle:'Totswapshop is an ecommerce platform designed on Shopify'
+        subtitle:'Totswapshop is an ecommerce platform designed on Shopify',
+        live :'https://www.totswapshop.com/'
     },
     {
         image: '/caelifashion.PNG',
         title: "CAELIFASHION",
-        subtitle:'Caelifashion is an ecommerce platform designed on Shopify'
+        subtitle:'Caelifashion is an ecommerce platform designed on Shopify',
     },
     {
         image: '/body.PNG',

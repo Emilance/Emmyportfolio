@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {BsFacebook,BsLinkedin, BsPhone, BsWhatsapp, BsInstagram, BsTwitter, BsGithub} from 'react-icons/bs'
+import {BsFacebook,BsLinkedin, BsTwitter, BsGithub} from 'react-icons/bs'
 
 
 import './NavBar.css'
@@ -10,10 +10,9 @@ function NavBar() {
     return ( <div className='NavBarContainer'>
                  <h1 className='logo'>EMI<span>LANCE</span></h1>
                  <div className='HsocialIcon'>
-    
-                <a target='_blank'    href='https://www.instagram.com/eminence.x/'>
-                    <BsInstagram className='Hicon ' size='20px'/>
-                </a>
+                 <a  target="_blank" href='https://github.com/emilance'>
+                      <BsGithub className='Hicon' size='20px'/>
+                 </a>
                 <a target='_blank' href='https://twitter.com/AlabiDamilolaD3'>
                     <BsTwitter className='Hicon ' size='20px'/>
                 </a>
@@ -30,7 +29,7 @@ function NavBar() {
                    <Navigation/>
                    <MobileNavigation/>
                  </div>
-                 <button><a href='#contact'>HIRE</a></button>
+                 <button><a href='#portfolio'>PROJECTS</a></button>
             
     </div> );
 }

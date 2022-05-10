@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Farsan&family=Sansita+Swashed:wght@300&display=swap');
+
+
 :root {
     --color-primary :chocolate;
     --color-main: brown;
@@ -6,13 +10,15 @@
     --color-black:black;
     --color-light:rgb(211, 210, 210);
 }
-
+*{
+font-family:'Times New Roman', Times, serif;
+}
 
 .headerContainer{
     background-image : linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.548), rgba(0, 0, 128, 0.479)), url('../image/Emilance Portfolio.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 30rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,7 +47,6 @@
 .titleContainer{
     margin-right: 30%;
     color: var(--color-light);
-    
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -51,11 +56,14 @@
 .title{
     font-size: 4rem;
     color: var(--color-light);
-    
+    font-family: 'Farsan', cursive;
+
     
 }
 .subTitle{
     font-size:1.5rem ;
+    font-family: 'Farsan', cursive;
+
 }
 
 .blinking-cursor:after{
@@ -91,12 +99,11 @@
 .aboutme {
     color:var(--color-header);
     text-align: center;
-    font-size: 1.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-family: 'Farsan', cursive;
 }
-
 .skillAndInfo{
-    height: 53vh;
+    height: 25rem;
     
     display: flex;
     margin-top: 30px;
@@ -196,7 +203,7 @@
     padding-right: 10px;
 }
 
- .btn, .btn > a{
+ .btn,  .about-btn-container> a {
      margin:5px  10px;
      width: 13rem;
      height:2rem;
@@ -207,7 +214,7 @@
  }
 
  
- .btn > a{
+.about-btn-container > a , .btn{
      text-decoration: none;
      color:inherit;
      width: 13rem;
@@ -366,7 +373,7 @@ margin-left: 0.5rem;
 
 }
 .portfolioContainer{
-height:90vh;
+height:40rem;
 margin:0 5px 10px 5px;
 position: relative;
 padding-top: 0;
@@ -495,7 +502,7 @@ transition: 1s;
 
 /*-----Contact secion ------*/
 .contactcontainer{
-    height: 120vh;
+    height: 45rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -690,7 +697,7 @@ form> .submit:hover{
 .footer{
     display: flex;
     flex-direction: column;
-    height:30vh;
+    height:12rem;
     width:100%;
     margin-top: 2rem;
     border-bottom-left-radius:15px;
@@ -888,11 +895,16 @@ form> .submit:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 90vw;
     }
     
-    .btn{
+      .btn{
         width:70%;
         margin:1rem
+    }
+    .about-btn-container> a{
+        margin:1rem;
+        width:100%;
     }
     
     
@@ -916,7 +928,7 @@ form> .submit:hover{
         z-index: 5;
     }
     .aboutme{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .skillAndInfo{

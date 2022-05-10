@@ -13,7 +13,7 @@ const About = () => {
     {label : 'JAVASCRIPT', parentClass:'progressBar' , class:'javascript'},
     {label : 'BOOTSTRAP', parentClass:'progressBar' , class:'bootstrap'},
     {label : 'REACT',parentClass:'progressBar' , class:'react'},
-    {label : 'PHP', parentClass:'progressBar' , class:'php'}
+    {label : 'TYPESCRIPT', parentClass:'progressBar' , class:'php'}
 
    ]
 
@@ -55,9 +55,9 @@ const About = () => {
             </div>
             {cert === true && <Certification   setCert={setCert}/>}
             <div className='about-btn-container'>
-            <button onClick={toggleCert} className='btn'>Certification</button>
-            <button className='btn'>Resume</button>
-            <button className='btn'><a href='#portfolio'>Portfolio</a></button>
+           <a> <button onClick={toggleCert} className='btn'>Certification</button></a>
+            <a href='#' className='Abutton'> <button className='btn'>Resume</button></a>
+            <a href='#portfolio' className='Abutton'>  <button className='btn'>Portfolio</button></a>
             </div>
         </div>
      );
