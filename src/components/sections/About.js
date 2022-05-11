@@ -3,6 +3,7 @@ import Info from '../component/Info';
 import Skill from '../component/Skill';
 import {AiOutlineFire} from 'react-icons/ai'
 import Certification from '../Certification';
+import resume from '../image/Eminence Resume.pdf'
 
 const About = () => {
  const [cert, setCert]  = useState(false);
@@ -56,7 +57,7 @@ const About = () => {
             {cert === true && <Certification   setCert={setCert}/>}
             <div className='about-btn-container'>
            <a> <button onClick={toggleCert} className='btn'>Certification</button></a>
-            <a href='#' className='Abutton'> <button className='btn'>Resume</button></a>
+            <a href={resume} download className='Abutton'> <button className='btn'>Resume</button></a>
             <a href='#portfolio' className='Abutton'>  <button className='btn'>Portfolio</button></a>
             </div>
         </div>
