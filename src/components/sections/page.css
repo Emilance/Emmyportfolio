@@ -388,24 +388,25 @@ transition: 1s;
 
 .slider > img {
     width:50% ;
-    height: 30rem;
+    height: 20rem;
     margin: 1.5rem;
     box-shadow: 5px 5px 10px black;
 }
 
 .aboutport{
     width:70vw;
-    height:5rem;
-    border:1px solid black;
+ 
 }
 .aboutport > h3{
     font-size: 1.5rem;
     text-align: center;
-
+    border:1px solid black;
+    padding: 2rem 0;
+    margin: 0;
 }
 .aboutport > p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top:3rem;
+    margin-top:1rem;
 
 }
 
@@ -866,7 +867,7 @@ form> .submit:hover{
     
     .slider > img {
         width:30rem ;
-        height: 50vh;
+        height: 30rem;
         margin: 1.5rem;
     }
     .rightarrow{
@@ -1041,6 +1042,7 @@ form> .submit:hover{
     .slider > img {
         width:60vw;
         margin-top: 2.5rem;
+        height: 20rem;
     }
     .contactBook{
         width:90%;
@@ -1064,6 +1066,7 @@ form> .submit:hover{
     }
     .contactButton{
         margin-left: 0;
+        width:80%;
     }
     .ContactInfo >p{
         font-size: 1.1rem;

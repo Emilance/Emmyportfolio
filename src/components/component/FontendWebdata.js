@@ -16,7 +16,7 @@ export const FrontendWEbdata =[
         title:'Eminence Portfolio',
         subtitle:'A portfolio website built for Eminence with HTML, CSS, JAVASCRIPT ',
         sourceCode:'https://github.com/Emilance/My-first-portfolio',
-        live:'#'
+        live:'https://nostalgic-aryabhata-662163.netlify.app/#about'
     },
     {
         id :2,
@@ -41,7 +41,7 @@ export const FrontendWEbdata =[
         title:'Mobile Calculator',
         subtitle:'A mobile calcuator built with HTML, CSS, JAVASCRIPT',
         sourceCode:'https://github.com/Emilance/Javascript-Calculator-App',
-        live:'https://app.netlify.com/sites/imaginative-capybara-4db62e'
+        live:'https://imaginative-capybara-4db62e.netlify.app/'
     },
     {
         id :5,

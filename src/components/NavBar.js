@@ -8,7 +8,7 @@ import Navigation from './Navigation/Navigation';
 
 function NavBar() {
     return ( <div className='NavBarContainer'>
-                 <h1 className='logo'>EMI<span>NENCE</span></h1>
+                 <h1 className='logo'>EMI<span>LANCE</span></h1>
                  <div className='HsocialIcon'>
                  <a  target="_blank" href='https://github.com/emilance'>
                       <BsGithub className='Hicon' size='20px'/>
