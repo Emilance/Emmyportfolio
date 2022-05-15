@@ -28,9 +28,7 @@ const Header = () => {
             <h1 className='title'>I am a</h1>
             <h3 className='subTitle  blinking-cursor'> {typingWord}</h3>
         </div>
-        <div  data-aos="fade-left"
-               data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
+        <div  data-aos="fade-left"      
              className='Emilanceimage'>
             <img className='emmyimg' src= {emmyImage} alt ="image"/>
         </div>

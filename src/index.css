@@ -6,8 +6,10 @@
   --color-black:black;
 }
 
-html{
-  scroll-behavior: smooth;
+html, body{
+ 
+  overflow-x: hidden;
+
 }
 
 body {
