@@ -9,7 +9,7 @@ const headerSubtitle = 'Proficient  React Js Frontend developer, Web designer';
 const Header = () => {
     
     useEffect(() => {
-        Aos.init({ duration: 2000})
+        Aos.init({ duration: 1000})
     })
 
 

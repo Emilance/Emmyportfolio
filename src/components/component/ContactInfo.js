@@ -13,7 +13,7 @@ import 'aos/dist/aos.css'
 class ContactInfo extends Component {
   
   componentDidMount(){
-    Aos.init({ duration: 2000})
+    Aos.init({ duration: 1000})
 
   }
 

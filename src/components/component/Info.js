@@ -10,7 +10,7 @@ import 'aos/dist/aos.css'
 const Info = (props) => {
    
     useEffect(() => {
-        Aos.init({ duration: 2000})
+        Aos.init({ duration: 1000})
     })
 
     return ( 

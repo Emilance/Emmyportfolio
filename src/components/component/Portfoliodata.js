@@ -4,7 +4,7 @@ export const Portfoliodata = [
    
     {
         image:'/thankyoupage.PNG',
-        title: "CONFIDENCE&CONVERSION",
+        title: "C & C",
         subtitle:'A thank you page for Confidence & Conversion   course website built with kajabi',
         live :'https://stevie-m-hahn-llc.mykajabi.com/thank-you/'
     },
