@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Portfoliodata} from '../component/Portfoliodata';
 import {AiOutlineArrowRight,  AiOutlineArrowLeft } from 'react-icons/ai'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 
 const Portfolio = ({slides}) => {
   const [current, setCurrent] = useState(2)
   const length = slides.length;
  
-
+  useEffect(() => {
+    Aos.init({ duration: 2000})
+})
 
   const nextslide = ()=>{
     setCurrent(current === length -1 ? 0 : current + 1)
@@ -26,7 +31,10 @@ const Portfolio = ({slides}) => {
 
    
     return (
-        <div id='portfolio' className='portfolioContainer' >
+        <div
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        id='portfolio' className='portfolioContainer' >
            <AiOutlineArrowLeft className='leftarrow' size='35px'  onClick={prevslide} />
            <AiOutlineArrowRight className='rightarrow' size='35px' onClick={nextslide}  />
 

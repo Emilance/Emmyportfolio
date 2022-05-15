@@ -1,11 +1,13 @@
 
 
 export const Portfoliodata = [
-     {
-         image: '/flowerlab.PNG',
-         title: "Flowerlab",
-         subtitle:'Flowerlab is a business website designed on Wix'
-     },
+   
+    {
+        image:'/thankyoupage.PNG',
+        title: "CONFIDENCE&CONVERSION",
+        subtitle:'A thank you page for Confidence & Conversion   course website built with kajabi',
+        live :'https://stevie-m-hahn-llc.mykajabi.com/thank-you/'
+    },
      {
         image: '/scispot.io.PNG',
         title: "SCISPOT",
@@ -28,16 +30,13 @@ export const Portfoliodata = [
         title: "CAELIFASHION",
         subtitle:'Caelifashion is an ecommerce platform designed on Shopify',
     },
-    {
-        image: '/body.PNG',
-        title: "BODYBYCIARA",
-        subtitle:'Bodybyciara is a website designed on Wix'
-    },
+
     {
         image:'/printrelated web.PNG',
         title: "PRINTRELATED",
         subtitle:'Printrelated is a woocommerce website'
     }
+   
 ]
 
  

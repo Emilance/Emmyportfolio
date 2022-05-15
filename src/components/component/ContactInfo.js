@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {BsFacebook,BsLinkedin, BsPhone, BsWhatsapp, BsInstagram, BsTwitter, BsGithub} from 'react-icons/bs'
 import {SiFiverr, SiUpwork} from 'react-icons/si'
 import {MdCastForEducation, MdAttachEmail} from 'react-icons/md'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 
@@ -10,30 +12,37 @@ import {MdCastForEducation, MdAttachEmail} from 'react-icons/md'
 
 class ContactInfo extends Component {
   
+  componentDidMount(){
+    Aos.init({ duration: 2000})
+
+  }
+
+
+
     render() { 
         const {email, phone, whatsapp, website }  = this.props
 
         return(
             <div className='ContactInfo'>
-                    <p > 
+                    <p  data-aos="fade-up"> 
                     <MdAttachEmail className='cicon' size='23px'/>
                         EMAIL: <span>{email}</span>
                     </p>
 
-                    <p > 
+                    <p  data-aos="fade-up" > 
                     <BsPhone className='cicon' size='23px'/>
                         PHONE: <span>{phone}</span>
                     </p>
-                    <p > 
+                    <p   data-aos="fade-up"> 
                     <BsWhatsapp className='cicon' size='23px'/>
                         WHATSAPP: <span>{whatsapp}</span>
-                    </p>
+                    </p  >
 
-                    <p > 
+                    <p  data-aos="fade-up" > 
                     <MdCastForEducation className='cicon' size='23px'/>
                         WEBSITE: <span>{website}</span>
                     </p>
-                <div className='socialIcon'>
+                <div  data-aos="fade-up" className='socialIcon'>
                 <a href='08140711202'>
                     <BsWhatsapp className='icon whatsapp' size='22px'/>
                 </a>

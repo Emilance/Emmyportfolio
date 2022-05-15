@@ -395,6 +395,7 @@ transition: 1s;
 
 .aboutport{
     width:70vw;
+    height: fit-content;
  
 }
 .aboutport > h3{
@@ -1038,7 +1039,10 @@ form> .submit:hover{
     .port-btn-container{
         width:90%;
         margin: 0 1.15rem 0 1.15rem;
+        
     }
+
+    
     .slider > img {
         width:60vw;
         margin-top: 2.5rem;

@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {AiOutlineArrowRight,  AiOutlineArrowLeft } from 'react-icons/ai'
 import { FrontendWEbdata } from '../component/FontendWebdata';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 
 const Portfolio = ({slides}) => {
   const [current, setCurrent] = useState(0)
   const length = slides.length;
  
+  useEffect(() => {
+    Aos.init({ duration: 2000})
+})
+
 
 
   const nextslide = ()=>{
@@ -26,7 +33,10 @@ const Portfolio = ({slides}) => {
 
    
     return (
-        <div id='portfolio' className='portfolioContainer' >
+        <div 
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        id='portfolio' className='portfolioContainer' >
            <AiOutlineArrowLeft className='leftarrow' size='35px'  onClick={prevslide} />
            <AiOutlineArrowRight className='rightarrow' size='35px' onClick={nextslide}  />
 

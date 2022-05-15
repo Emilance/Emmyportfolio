@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Info from '../component/Info';
 import Skill from '../component/Skill';
 import {AiOutlineFire} from 'react-icons/ai'
 import Certification from '../Certification';
 import resume from '../image/Eminence Resume.pdf'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 const About = () => {
  const [cert, setCert]  = useState(false);
+          
+    useEffect(() => {
+        Aos.init({ duration: 2000})
+    })
 
+
+     
    const Skills = [
     {label : 'HTML', parentClass:'progressBar',class:'html'},
     {label : 'CSS', parentClass:'progressBar' , class:'css'},
@@ -30,10 +39,8 @@ const About = () => {
     return ( 
         <div id='about' className='aboutContainer'>
             <h1 className='sectiontitle'>About</h1>
-            <p className='aboutme'>Emilance is a prolific front end developer 
-            with vast knowledge in building  responsive, user friendly easily navigable and  professional websites, having 
-            completed several courses on Responsive web designing, web development, computer science and some technological tools like HTML, CSS , 
-            Javascript, React, PHP and Jquery he has been able to complete diverse project that divulge his proficiency in front end  web  development</p>
+            <p className='aboutme'>I am Eminence a prolific React front end developer with vast curiousity and passion for bridging the gap between
+             graphical designs and its technical implementation, I have experience in translating UI/UX designs, wireframes into actual code using web markups, like CSS , HTML, JavaScript, frameworks and libraries like react JS, next JS, bootstrap and also with a proficient understanding of Typescript and client-side scripting</p>
             <div className='skillAndInfo' >
                 <div className='info'>
                      <Info
@@ -44,7 +51,9 @@ const About = () => {
                         location= "Ile-ife, Osun state, Nigeria"
                      />
                 </div>
-                <div className='skill'>
+                <div v data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom" 
+                     className='skill'>
                     <h3>Skills     <AiOutlineFire className='aicon' size='25px'/>
 </h3>
                     {Skills.map((skill, index) => {
@@ -55,7 +64,9 @@ const About = () => {
                 </div>
             </div>
             {cert === true && <Certification   setCert={setCert}/>}
-            <div className='about-btn-container'>
+            <div   data-aos="fade-up"
+                 data-aos-anchor-placement="center-bottom"
+                className='about-btn-container'>
            <a> <button onClick={toggleCert} className='btn'>Certification</button></a>
             <a href={resume} download className='Abutton'> <button className='btn'>Resume</button></a>
             <a href='#portfolio' className='Abutton'>  <button className='btn'>Portfolio</button></a>

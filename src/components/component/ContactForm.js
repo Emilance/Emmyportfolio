@@ -1,12 +1,17 @@
 import { keyboard } from '@testing-library/user-event/dist/keyboard';
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import FormInput from './FormInput';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const ContactForm = () => {
   const initialvalue = { name: '', email:'', phone: '',message:'' }
  const [formdata, setFormdata] = useState(initialvalue)
 
+ 
+     useEffect(() => {
+    Aos.init({ duration: 2000})
+   })
 
     const formInputs  = [
         [
@@ -68,7 +73,7 @@ const ContactForm = () => {
                     <label>Message</label>
                     <textarea name='message'id='message'/>
                 </div> */}
-                <input className='submit' type='submit' name='submit' value="SEND"/>
+                <input data-aos="fade-up" className='submit' type='submit' name='submit' value="SEND"/>
             </form>
         </div>
      );

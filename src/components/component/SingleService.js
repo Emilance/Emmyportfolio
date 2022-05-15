@@ -1,10 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import {IoMdPerson} from 'react-icons/io'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const SingleService = (props) => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000})
+    })
+
     return (  
-        <div className='sServiceContainer'>
+        <div data-aos="fade-right" className='sServiceContainer'>
             <div className='serviceDisplayArea'>
                   <img className='serviceimg' src = {props.image} alt="service image"/>
             </div>

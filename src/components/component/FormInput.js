@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 class FormInput extends Component {
-    
+    componentDidMount(){
+        Aos.init({ duration: 2000})
+
+    }
     render() { 
         return (
             <>
             
              { this.props.element ==='input' ?
-            <div className='forminput' >
+            <div  data-aos="fade-up" className='forminput' >
                 <label>{this.props.label}</label>
                  <input
                 type={this.props.type} 
@@ -18,7 +24,7 @@ class FormInput extends Component {
                  />
                 </div>
                 :
-            <div className= 'textarea' >
+            <div data-aos="fade-up" className= 'textarea' >
               <label>{this.props.label}</label>
                <textarea 
                  name={this.props.name} 
