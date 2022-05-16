@@ -26,8 +26,7 @@ body {
 .App {
   width: min(95vw, 1500px);
   height: 100%;
-  border: 1px solid black;
-  box-shadow:10px 5px 15px  var(--color-primary)  ;
+
   border-radius: 15px;
   background-color: var(--color-white);
 }
