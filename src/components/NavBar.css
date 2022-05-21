@@ -1,7 +1,7 @@
 :root {
-    --color-primary :chocolate;
+    --color-primary :brown;
     --color-main: brown;
-    --color-header:rgb(14, 1, 1);
+    --color-Nav:rgb(14, 1, 1);
     --color-white:white;
     --color-black:black;
     --color-primarytrans :rgba(210, 105, 30, 0.849);
@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid black;
-    background-color:var(--color-header) ;
+    background-color:var(--color-Nav) ;
     height: 5rem;
     border-radius: 15px 15px 0 0;
    
@@ -43,7 +43,7 @@
     font-weight: 700;
     border-radius: 10%;
     border:2px solid var(--color-white);
-    background-color: var(--color-header);
+    background-color: var(--color-Nav);
     color:var(--color-white);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: pointer;
@@ -146,7 +146,7 @@ padding :5px;
 
 .Hamburger{
     color: var(--color-black);
-    background-color:var(--color-primarytrans);
+    background-color:var(--color-primary);
     border-radius: 5px;
     position: fixed;
     right: 10px;

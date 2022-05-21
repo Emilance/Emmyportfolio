@@ -3,19 +3,20 @@
 
 
 :root {
-    --color-primary :chocolate;
+    --color-primary :brown;
     --color-main: brown;
-    --color-header:rgb(14, 1, 1);
+    --color-header:rgb(207, 177, 177);
     --color-white:white;
     --color-black:black;
     --color-light:rgb(211, 210, 210);
+    --color-hover: rgb(202, 200, 200);
 }
 *{
-font-family:'Times New Roman', Times, serif;
+    font-family: 'Farsan', cursive;
 }
 
 .headerContainer{
-    background-image : linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.548), rgba(0, 0, 128, 0.479)), url('../image/Emilance Portfolio.jpg') ;
+    background-image : linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.548), brown), url('../image/Emilance Portfolio.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 30rem;
@@ -132,6 +133,7 @@ font-family:'Times New Roman', Times, serif;
 .info > p > span {
     color:var(--color-main);
     margin-left: 1rem;
+    font-size: 1.5rem;
 }
 .skill{
     font-size: 1.3rem;
@@ -208,6 +210,8 @@ font-family:'Times New Roman', Times, serif;
      width: 13rem;
      height:2rem;
      cursor: pointer;
+     background-color: transparent;
+    
     font-size: 1rem;
     border-radius: 7px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -219,10 +223,15 @@ font-family:'Times New Roman', Times, serif;
      color:inherit;
      width: 13rem;
  }
+ .btn{
+         border: 1px dotted white;
+
+ }
  .btn:hover{
-    color:var(--color-light);
-    background-color: var(--color-header);
-    
+    color:var(--color-black);
+    background-color: var(--color-hover);
+    border: 3px dotted var(--color-primary);
+
  }
 
  .about-btn-container{
@@ -282,30 +291,34 @@ font-family:'Times New Roman', Times, serif;
 }
 .sServiceSubtitle{
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 0 4px 0px 4px;
 }
 .sbtn{
     margin-bottom: 1rem;
+    border: 2px dotted white;
+    width: 65%;
 }
 .sbtn, .sbtn>a{
-    width: 65%;
+    color:var(--color-white);
     font-size: 0.8rem;
-   
+   background-color: transparent;
+   padding: 1rem;
     border-radius: 7px;
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .sbtn:hover  {
-    color: var(--color-light);
-    background-color: var(--color-header);
+    color:var(--color-black);
+    background-color: var(--color-hover);
+    border: 3px dotted var(--color-primary);
+
 }
 .sbtn > a{
     text-decoration: none;
     color:inherit;
-    width: 12rem;
+    width:100%;
 
     
 }
@@ -354,12 +367,14 @@ font-family:'Times New Roman', Times, serif;
    font-size:0.8rem ;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color: var(--color-light);
-   background-color: var(--color-header);
+   background-color: transparent;
+   border: 1px dotted var(--color-white);
    cursor: pointer;
 
 }
 .btn1:hover{
-    background-color: var(--color-main);
+    color:var(--color-black);
+    background-color: var(--color-header);
 }
 .btn1active{
     width: 100%;
@@ -413,6 +428,7 @@ transition: 1s;
 .aboutport > p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top:1rem;
+
 
 }
 
@@ -477,7 +493,6 @@ transition: 1s;
     display: flex;
     justify-content: center;
     margin:0.5;
-    border: 1px solid black;
 
 }
 .portUButtonContainer > a{
@@ -489,6 +504,8 @@ transition: 1s;
     justify-content: center;
     align-items: center;
     color:var(--color-header);
+    border: 3px dotted var(--color-white);
+
 }
 
 
@@ -497,7 +514,7 @@ transition: 1s;
 
 .portUButtonContainer > .livebtn{
     background-color: var(--color-header);
-    color:white;
+    color:var(--color-black);
 }
 
  .portUButtonContainer> a:hover{
@@ -517,13 +534,13 @@ transition: 1s;
 }
 .contactBook{
     height: auto;
-    box-shadow:15px 10px 20px  var(--color-header)  ;
+    /* box-shadow:15px 10px 20px  var(--color-header)  ; */
     width:70vw;
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
     padding-bottom: 0.3rem;
-   animation:boxshadow 3s  linear  infinite;
+   /* animation:boxshadow 3s  linear  infinite; */
 }
 
 @keyframes boxshadow {
@@ -571,18 +588,18 @@ transition: 1s;
     color:var(--color-header);
 }
 
-.socialIcon > a >.whatsapp{
+/*.socialIcon > a >.whatsapp{
       color: green;
 }
-.twitter{
+ .twitter{
     color:rgb(0, 183, 255);
 }
 .instagram{
     color:rgb(172, 4, 135);
 }
 .facebook{
-    color: rgb(38, 8, 207)
-}
+    color: rgb(38, 8, 207) 
+}*/
 
 .icon {
        margin: 1rem;
@@ -648,7 +665,9 @@ transition: 1s;
     height:1.4rem;
     width:70%;
     border:none;
-    border-bottom:1px outset var(--color-header);
+    color:var(--color-white);
+    background-color: transparent;
+    border-bottom:3px outset var(--color-header);
     }
 .forminput  >input:focus{
     font-size: 1rem;
@@ -667,12 +686,15 @@ transition: 1s;
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
+   
 }
 .textarea > textarea{
     height:100px;
     width: 70%;
     margin-bottom: 0.5rem;
     border: none;
+    color:var(--color-white);
+    background-color: transparent;
     border-bottom:1px outset var(--color-header);
 
     
@@ -736,13 +758,14 @@ form> .submit:hover{
 .footerbottom> p{
     color: var(--color-light);
     font-size: 1rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Times New Roman', Times, serif;
     animation:movingcolor1 6s  linear  infinite;
 
 }
 
 .footerbottom> p>span{
     color:var(--color-header);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     animation:movingcolor 6s  linear  infinite;
 
     
@@ -750,36 +773,52 @@ form> .submit:hover{
 @keyframes movingcolor {
     10% {
         color:var(--color-header);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     30%{
         color:var(--color-light);
+        font-family:'Times New Roman', Times, serif;
+        
     }
     60%{
         color:var(--color-header);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     80%{
         color:var(--color-light);
+        font-family:'Times New Roman', Times, serif;
+
+        
     }
     100%{
         color:var(--color-header);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 }
 
 @keyframes movingcolor1 {
     10% {
         color:var(--color-light);
+        font-family:'Times New Roman', Times, serif;
+
     }
     30%{
         color:var(--color-header);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     60%{
         color:var(--color-light);
+        font-family:'Times New Roman', Times, serif;
+
     }
     80%{
         color:var(--color-header);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     100%{
         color:var(--color-light);
+        font-family:'Times New Roman', Times, serif;
+
     }
 }
 
@@ -804,46 +843,6 @@ form> .submit:hover{
 
 
 
-
-
-/* ---- CircularNav--*/
-.cirularNavContainer{
-    height: 35rem;
-    display: flex;
-    justify-content: center;
-}
-
-.linkcontainer{
-    height:25rem;
-    width:25rem;
-    background-color:var(--color-header);
-    position: relative;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-
-.link{
-    position: absolute;
-    width: 100%;
-    height:100%;
-    text-align: center;
-    transform: rotate(var(--rotation));
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding-top:0.5rem;
-    color: var(--color-light);
-    
-}
-
-.link:hover{
-    color: var(--color-primary);
-}
-
-.Home {--rotation: 270deg;}
-.About {--rotation: 315deg;}
-.Service {--rotation: 225deg;}
-.Portfolio {--rotation: 360deg;}
-.Contact {--rotation: 45deg;}
 
 
 

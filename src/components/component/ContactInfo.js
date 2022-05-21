@@ -46,7 +46,7 @@ class ContactInfo extends Component {
                 <a href='08140711202'>
                     <BsWhatsapp className='icon whatsapp' size='22px'/>
                 </a>
-                <a href='https://www.instagram.com/eminence.x/'>
+                <a href='https://www.instagram.com/eminencedd/'>
                     <BsInstagram className='icon instagram' size='23px'/>
                 </a>
                 <a href='https://twitter.com/AlabiDamilolaD3'>
@@ -63,7 +63,7 @@ class ContactInfo extends Component {
                 </div>
                 
                       <button className='contactButton'>
-                          <a href='https://www.fiverr.com/emilance?up_rollout=true'>
+                          <a href='https://www.fiverr.com/emilance'>
                               <span>
 
                               Contact Me on Fiverr
