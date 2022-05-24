@@ -149,56 +149,23 @@
     border: 1px solid var(--color-header);
     padding:0 40px
 }
-.progress {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
 
-.progressBar{
+.skillCon{
     width :20rem;
-    height:1.3rem;
-    background-color: var(--color-header);
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr ;
 
 }
-.html,.css, .javascript, .bootstrap, .react, .php{
-    height:1.3rem;
-    background-color: var(--color-primary);
-    animation:progress 7s  linear  infinite;
-    animation-delay: 2s;
-}
-@keyframes progress {
-    10% {
-        width:10%
-    }
 
-    50% {
-        width:50%
-    }
-    60% {
-        width:60%
-    }
-    70% {
-        width:70%
-    }
+
+.sSkill > p {
+    margin:0.5rem;
     
-
 }
 
-.html, .css{
-    width: 90%;
-}
-.javascript{
-    width: 79%;
-}
-.bootstrap{
-    width: 90%;
-}
-.react{
-    width: 70%;
-}
-.php{
-    width: 60%;
+.sSkill {
+    margin: 0rem 1rem;
+    
 }
 
 .aicon{
@@ -588,19 +555,6 @@ transition: 1s;
     color:var(--color-header);
 }
 
-/*.socialIcon > a >.whatsapp{
-      color: green;
-}
- .twitter{
-    color:rgb(0, 183, 255);
-}
-.instagram{
-    color:rgb(172, 4, 135);
-}
-.facebook{
-    color: rgb(38, 8, 207) 
-}*/
-
 .icon {
        margin: 1rem;
 }
@@ -941,7 +895,7 @@ form> .submit:hover{
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-        height:123vh;
+        height:fit-content;
     }
     .info {
         margin-top: 0;

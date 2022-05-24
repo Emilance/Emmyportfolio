@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Info from '../component/Info';
-import Skill from '../component/Skill';
 import {AiOutlineFire} from 'react-icons/ai'
 import Certification from '../Certification';
 import resume from '../image/Eminence Resume.pdf'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import reactSvg  from  '../image/react.svg'
+import SkillDisplay from '../component/SkillDisplay';
 
 
 const About = () => {
@@ -16,16 +17,7 @@ const About = () => {
     })
 
 
-     
-   const Skills = [
-    {label : 'HTML', parentClass:'progressBar',class:'html'},
-    {label : 'CSS', parentClass:'progressBar' , class:'css'},
-    {label : 'JAVASCRIPT', parentClass:'progressBar' , class:'javascript'},
-    {label : 'BOOTSTRAP', parentClass:'progressBar' , class:'bootstrap'},
-    {label : 'REACT',parentClass:'progressBar' , class:'react'},
-    {label : 'TYPESCRIPT', parentClass:'progressBar' , class:'php'}
-
-   ]
+   
 
 
    const toggleCert = () =>{
@@ -41,6 +33,7 @@ const About = () => {
             <h1 className='sectiontitle'>About</h1>
             <p className='aboutme'>I am Eminence a prolific React front end developer with vast curiousity and passion for bridging the gap between
              graphical designs and its technical implementation, I have experience in translating UI/UX designs, wireframes into actual code using web markups, like CSS , HTML, JavaScript, frameworks and libraries like react JS, next JS, bootstrap and also with a proficient understanding of Typescript and client-side scripting</p>
+          <img src={reactSvg} alt="React svg"/>
             <div className='skillAndInfo' >
                 <div className='info'>
                      <Info
@@ -56,11 +49,7 @@ const About = () => {
                      className='skill'>
                     <h3>Skills     <AiOutlineFire className='aicon' size='25px'/>
 </h3>
-                    {Skills.map((skill, index) => {
-                        return (
-                            <Skill {...skill}  key={index} />
-                    )
-                         } ) }
+                    <SkillDisplay/>
                 </div>
             </div>
             {cert === true && <Certification   setCert={setCert}/>}
