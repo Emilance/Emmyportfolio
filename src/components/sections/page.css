@@ -962,6 +962,7 @@ form> .submit:hover{
         display: flex;
         flex-direction: column;
         height: 100%;
+
     
         
     }
@@ -969,13 +970,14 @@ form> .submit:hover{
         border:none;
     }
     .contactcontainer{
-        height: 210vh;
+        height: 75rem;
         justify-content: flex-start;
         
     }
     .ContactForm > form {
     padding-left: 2rem;
     margin-top: 1rem;
+   
     
     }
     
@@ -1008,7 +1010,9 @@ form> .submit:hover{
         align-items: center;
         z-index: 5;
     }
-    
+    .contactcontainer{
+        height: 78rem;
+    }
     .titleContainer{
        
         text-align: center;
@@ -1051,6 +1055,7 @@ form> .submit:hover{
     }
     .contactBook{
         width:90%;
+      
     }
     .ContactInfo{
         display: flex;
