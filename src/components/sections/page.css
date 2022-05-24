@@ -104,10 +104,10 @@
     font-family: 'Farsan', cursive;
 }
 .skillAndInfo{
-    height: 25rem;
-    
+    height: 25rem;  
     display: flex;
     margin-top: 30px;
+
 }
 
 
@@ -122,18 +122,14 @@
      margin-top: 5rem;
 }
 
-.info > p {
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     display: flex;
-     width: 100%;
-     
-     
-}
 
-.info > p > span {
-    color:var(--color-main);
-    margin-left: 1rem;
-    font-size: 1.5rem;
+
+
+.reactsvg{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
 }
 .skill{
     font-size: 1.3rem;
@@ -211,14 +207,14 @@
 /* --- Sevices section ---*/
 .sServiceContainer {
     height: auto;
-    box-shadow:7px 5px 15px  var(--color-primary)  ;
+    box-shadow:3px 3px 5px  var(--color-primary)  ;
     width:30%;
     margin:1rem;
     display: flex;
     flex-direction: column;
     transition: 0.5s all ease;
     padding-bottom: 1rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 .sServiceContainer:hover{
@@ -228,16 +224,16 @@
 }
 
 .serviceDisplayArea{
-    /* border:5px solid var(--color-main); */
+
     flex: 1;
-    border-radius: 2rem;
+    border-radius: 1rem;
 
 }
 .serviceimg{
     width:100%;
     height: 100%;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     border-bottom: 2px solid var(--color-primary);
 
 }
@@ -383,12 +379,13 @@ transition: 1s;
 
 .aboutport{
     width:70vw;
+
+
  
 }
 .aboutport > h3{
     font-size: 1.5rem;
     text-align: center;
-    border:1px solid black;
     padding: 2rem 0;
     margin: 0;
 }
@@ -403,11 +400,13 @@ transition: 1s;
   opacity:1;
   transition-duration: 1s;
   transform: scale(1.04);
+
 }
 
 .slide{
     opacity:0;
     transition-duration: 1s ease;
+    display: none;
 }
 
 .leftarrow {
@@ -415,6 +414,7 @@ transition: 1s;
     top:50%;
     left:1rem;
     z-index: 100;
+    border: 2px solid white;
     user-select: none;
 }
 
@@ -425,6 +425,7 @@ transition: 1s;
     z-index:100;
     user-select: none;
     cursor: pointer;
+    border: 2px solid white;
 }
 .rightarrow:hover, .leftarrow:hover{
     top:51%;
@@ -461,6 +462,7 @@ transition: 1s;
     justify-content: center;
     margin:0.5;
 
+
 }
 .portUButtonContainer > a{
     height: 4rem;
@@ -472,6 +474,7 @@ transition: 1s;
     align-items: center;
     color:var(--color-header);
     border: 3px dotted var(--color-white);
+    
 
 }
 
@@ -501,13 +504,11 @@ transition: 1s;
 }
 .contactBook{
     height: auto;
-    /* box-shadow:15px 10px 20px  var(--color-header)  ; */
     width:70vw;
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
     padding-bottom: 0.3rem;
-   /* animation:boxshadow 3s  linear  infinite; */
 }
 
 @keyframes boxshadow {
@@ -903,7 +904,7 @@ form> .submit:hover{
         align-items: center;
         font-weight: 400;
         width: 100%;
-        margin: 4rem;
+       
       
            
         

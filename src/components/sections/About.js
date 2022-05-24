@@ -32,25 +32,19 @@ const About = () => {
         <div id='about' className='aboutContainer'>
             <h1 className='sectiontitle'>About</h1>
             <p className='aboutme'>I am Eminence a prolific React front end developer with vast curiousity and passion for bridging the gap between
-             graphical designs and its technical implementation, I have experience in translating UI/UX designs, wireframes into actual code using web markups, like CSS , HTML, JavaScript, frameworks and libraries like react JS, next JS, bootstrap and also with a proficient understanding of Typescript and client-side scripting</p>
-          <img src={reactSvg} alt="React svg"/>
-            <div className='skillAndInfo' >
-                <div className='info'>
-                     <Info
-                       name= "Alabi Daniel"
-                       education= "Undergraduate "
-                        email= " Emmyfedev@gmail.com"
-                        Phone = "08140711202"
-                        location= "Ile-ife, Osun state, Nigeria"
-                     />
-                </div>
-                <div v data-aos="fade-up"
-                     data-aos-anchor-placement="center-bottom" 
+             graphical designs and its technical implementation, I have experience in translating UI/UX designs, wireframes into actual code using web markups, like CSS , HTML, JavaScript, frameworks and libraries like react JS, next JS, bootstrap and also with a proficient understanding of Typescript and client-side scripting</p>         
+            <div className='skillAndInfo'>
+                  <div className='info' >
+                     <img src={reactSvg} className="reactsvg" alt="React svg"/>
+
+                  </div>
+                  <div v data-aos="fade-up"
+                       data-aos-anchor-placement="center-bottom" 
                      className='skill'>
                     <h3>Skills     <AiOutlineFire className='aicon' size='25px'/>
 </h3>
                     <SkillDisplay/>
-                </div>
+                  </div>
             </div>
             {cert === true && <Certification   setCert={setCert}/>}
             <div   data-aos="fade-up"
