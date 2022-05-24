@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FaReact, FaHtml5, FaNodeJs, FaCss3Alt }  from 'react-icons/fa'
+import { FaReact,FaGitAlt, FaHtml5, FaNodeJs, FaCss3Alt }  from 'react-icons/fa'
 import { SiTypescript , SiJavascript, SiExpress , SiMongodb }  from 'react-icons/si'
 
 
@@ -47,6 +47,11 @@ const SkillDisplay = (props) => {
             <SiExpress className="technology"  size="50"/>     
                   <p>ExpressJs</p>
         </div>
+        <div className='sSkill'>
+            <FaGitAlt className="technology"  size="50"/>     
+                  <p>Git</p>
         </div>
+        </div>
+        
     );}
 export default SkillDisplay
