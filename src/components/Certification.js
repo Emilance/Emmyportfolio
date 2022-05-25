@@ -9,12 +9,12 @@ const Certification = ({ setCert }) => {
 const nextCert = () => {
     let certContainer =document.querySelector('.certContainer');
 
-    certContainer.scrollLeft +=100;
+    certContainer.scrollLeft +=200;
 }
 const prevCert = () =>{
     let certContainer =document.querySelector('.certContainer');
 
- certContainer.scrollLeft -=100;
+ certContainer.scrollLeft -=200;
 }
   
     return ( 
@@ -22,10 +22,10 @@ const prevCert = () =>{
         
         
         <div className='certContainer'>
-              <div onClick={nextCert} className='nextButton'>
+              <div onMouseDown={nextCert} className='nextButton'>
                   <h1>{">"}</h1>
               </div>
-              <div onClick={prevCert} className='prevButton'>
+              <div onMouseDown={prevCert} className='prevButton'>
                   <h1>{"<"} </h1>
               </div>
 
