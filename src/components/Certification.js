@@ -1,31 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { CertificateList } from './component/CertificateList';
 import './Certifications.css'
 
 
+
 const Certification = ({ setCert }) => {
+    const  certCon = useRef(null)
+
 
 
 const nextCert = () => {
-    let certContainer =document.querySelector('.certContainer');
 
-    certContainer.scrollLeft +=200;
+    certCon.current.scrollLeft +=200;
 }
 const prevCert = () =>{
-    let certContainer =document.querySelector('.certContainer');
-
- certContainer.scrollLeft -=200;
+ certCon.current.scrollLeft -=200;
 }
   
     return ( 
         <div className='certParent'>
         
         
-        <div className='certContainer'>
-              <div onMouseDown={nextCert} className='nextButton'>
+        <div ref={certCon} className='certContainer'>
+              <div   onMouseDown={nextCert} className='nextButton'>
                   <h1>{">"}</h1>
               </div>
-              <div onMouseDown={prevCert} className='prevButton'>
+              <div  onMouseDown={prevCert} className='prevButton'>
                   <h1>{"<"} </h1>
               </div>
 

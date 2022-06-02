@@ -147,9 +147,11 @@
 }
 
 .skillCon{
-    width :20rem;
+    width :23rem;
     display: grid;
+    margin-left: 1rem;
    grid-template-columns: 1fr 1fr 1fr ;
+
 
 }
 
@@ -368,12 +370,14 @@ transition: 1s;
 .slider{
     position:absolute;
     margin-left: 3rem;
+    
 }
 
 .slider > img {
     width:50% ;
     height: 20rem;
     margin: 1.5rem;
+
     box-shadow: 5px 5px 10px black;
 }
 
