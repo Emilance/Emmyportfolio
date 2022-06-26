@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {BsFacebook,BsLinkedin, BsTwitter, BsGithub} from 'react-icons/bs'
+import {BsLinkedin, BsTwitter, BsGithub} from 'react-icons/bs'
 
 
 import './NavBar.css'
@@ -16,9 +16,7 @@ function NavBar() {
                 <a target='_blank' href='https://twitter.com/AlabiDamilolaD3'>
                     <BsTwitter className='Hicon ' size='20px'/>
                 </a>
-                <a target='_blank'  href='https://web.facebook.com/damiloladaniel.alabi'>
-                    <BsFacebook className='Hicon ' size='20px'/>
-                </a>
+              
                 <a target='_blank'  href='https://www.linkedin.com/in/damilola-daniel-alabi-120036218/'>
                     <BsLinkedin className='Hicon ' size='20px'/>
                 </a>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BsFacebook,BsLinkedin, BsPhone, BsWhatsapp, BsInstagram, BsTwitter, BsGithub} from 'react-icons/bs'
+import {BsLinkedin, BsPhone, BsWhatsapp, BsInstagram, BsTwitter, BsGithub} from 'react-icons/bs'
 
 
 const Footer = () => {
@@ -22,9 +22,7 @@ const Footer = () => {
                 <a href='https://twitter.com/AlabiDamilolaD3'>
                     <BsTwitter className='Licon twitter' size='20px'/>
                 </a>
-                <a href='https://web.facebook.com/damiloladaniel.alabi'>
-                    <BsFacebook className='Licon facebook' size='20px'/>
-                </a>
+            
                 <a href='https://www.linkedin.com/in/damilola-daniel-alabi-120036218/'>
                     <BsLinkedin className='Licon twitter' size='20px'/>
                 </a>

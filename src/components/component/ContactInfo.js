@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BsFacebook,BsLinkedin, BsPhone, BsWhatsapp, BsInstagram, BsTwitter, BsGithub} from 'react-icons/bs'
+import {BsLinkedin, BsPhone, BsWhatsapp, BsInstagram, BsTwitter, BsGithub} from 'react-icons/bs'
 import {SiFiverr, SiUpwork} from 'react-icons/si'
 import {MdCastForEducation, MdAttachEmail} from 'react-icons/md'
 import Aos from 'aos';
@@ -52,8 +52,8 @@ class ContactInfo extends Component {
                 <a href='https://twitter.com/AlabiDamilolaD3'>
                     <BsTwitter className='icon twitter' size='25px'/>
                 </a>
-                <a href='https://web.facebook.com/damiloladaniel.alabi'>
-                    <BsFacebook className='icon facebook' size='25px'/>
+                <a href='https://github.com/emilance'>
+                    <BsGithub className='icon facebook' size='25px'/>
                 </a>
                 <a href='https://www.linkedin.com/in/damilola-daniel-alabi-120036218/'>
                     <BsLinkedin className='icon twitter' size='25px'/>

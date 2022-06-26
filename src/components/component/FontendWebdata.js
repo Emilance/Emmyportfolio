@@ -3,14 +3,22 @@
 export const FrontendWEbdata =[
     {
         id :0,
+        image: '/dyen.PNG',
+        title:'Dyen Clothing',
+        subtitle:'Dyen clothing website is a tye and dye ecommerce website built with nextJS ',
+        sourceCode:'https://github.com/Emilance/Dyenwebsite',
+        live:"https://dyen.vercel.app"
+    }, 
+    {
+        id :1,
         image: '/ecommece website.PNG',
-        title:'Ecommerce Page',
+        title:'Ecommerce  Page',
         subtitle:'An ecommerce Page built with BOOTSTRAP CSS and BOOTSTRAP JS ',
         sourceCode:'https://github.com/Emilance/ecommercepage',
         live:"https://emilance.github.io/ecommercepage"
     },  
     {
-        id :1,
+        id :2,
         image: '/Emilance.PNG',
         title:'Emilance Portfolio',
         subtitle:'A portfolio website built for Emilance with REACT JS',
@@ -18,7 +26,7 @@ export const FrontendWEbdata =[
         live:'https://emilance.github.io/Emmyportfolio'
     },
     {
-        id: 2,
+        id: 3,
         image: '/fbclone1.PNG',
         title:'FACEBOOK CLONE',
         subtitle:'An fb-clone built with MERN technology,  Mongodb, Nodejs ExpressJs, ReactJS  (work in progress!)',
@@ -27,7 +35,7 @@ export const FrontendWEbdata =[
     },
   
     {
-        id : 3,
+        id : 4,
         image: '/cryptopunk.PNG',
         title:'CRYPTOPUNK NFT WEBSITE',
         subtitle:'A cryptopunk nft website clone  with React JS using opensea API',
@@ -36,23 +44,14 @@ export const FrontendWEbdata =[
     },
 
     {
-        id :4,
+        id :5,
         image: '/Chatapp.PNG',
         title:'A Realtime ChatApp',
         subtitle:'A realtime chatapp built with Reactjs, expressjs and socket.io ',
         sourceCode:'https://github.com/Emilance/AnonymousChatApp',
         live:'https://github.com/Emilance/AnonymousChatApp'
     },
-    
-   
-    {
-        id: 5,
-        image: '/mobile Calculator.PNG',
-        title:'Mobile Calculator',
-        subtitle:'A mobile calcuator built with HTML, CSS, JAVASCRIPT',
-        sourceCode:'https://github.com/Emilance/Javascript-Calculator-App',
-        live:'https://imaginative-capybara-4db62e.netlify.app/'
-    },
+ 
   
     {
         id: 6,

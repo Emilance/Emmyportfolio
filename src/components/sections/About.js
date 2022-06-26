@@ -31,7 +31,7 @@ const About = () => {
     return ( 
         <div id='about' className='aboutContainer'>
             <h1 className='sectiontitle'>About</h1>
-            <p className='aboutme'>I am Eminence a prolific React front end developer with vast curiousity and passion for bridging the gap between
+            <p className='aboutme'>I am Damilola Alabi, a prolific React front end developer with vast curiousity and passion for bridging the gap between
              graphical designs and its technical implementation, I have experience in translating UI/UX designs, wireframes into actual code using web markups, like CSS , HTML, JavaScript, frameworks and libraries like react JS, next JS, bootstrap and also with a proficient understanding of Typescript and client-side scripting</p>         
             <div className='skillAndInfo'>
                   <div className='info' >
