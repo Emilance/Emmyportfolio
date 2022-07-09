@@ -316,7 +316,7 @@
 .port-btn-container {
     display: flex;
     margin: 0rem 5rem 3rem 5rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width:80%;
     
@@ -335,6 +335,7 @@
    background-color: transparent;
    border: 1px dotted var(--color-white);
    cursor: pointer;
+   border-radius: 1rem;
 
 }
 .btn1:hover{
@@ -353,6 +354,7 @@
     color:var(--color-header);
     cursor: pointer;
     background-color:var(--color-primary);
+    border-radius: 1rem;
  }
 .portbtnicon{
 margin-left: 0.5rem;
